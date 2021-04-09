@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @extend %font-primary;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: $wrapper-width;
+  margin: auto;
+}
+
+.background-wrapper {
+  background: radial-gradient(
+    71.89% 152.21% at 40.1% 50%,
+    #b5e6ff 0%,
+    #59c3fb 100%
+  );
+  background-image: url("assets/backgrounds/watch-online-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}

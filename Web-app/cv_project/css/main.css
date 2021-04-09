@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --------- Header -----------*/
+.header {
+  width: 100%;
+  background-color: #4d4d4f;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.header-container__name {
+  display: flex;
+  align-items: center;
+}
+
+.header-photo {
+  margin-right: 20px;
+}
+
+.header-img {
+  border-radius: 50%;
+}
+
+.header-title {
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-contacts {
+  text-align: right;
+  min-width: 245px;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.img-icons {
+  width: 20px;
+  vertical-align: middle;
+}
+
+/* ----------- Content ----------------*/
+.content {
+  display: flex;
+}
+
+.left-column {
+  background-color: #c0c0c0;
+  width: 40%;
+  padding: 10px;
+}
+
+.right-column {
+  width: 60%;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+/* ------------ Section ------------------*/
+.section-header__container {
+  background-color: #c0c0c0;
+}
+
+.section-header {
+  margin: 0;
+  padding: 0;
+}
+
+.education-year {
+  font-weight: 700;
+}
+
+.experience-years {
+  font-weight: 700;
+}
+
+.code-container {
+  background-color: #e4e4e4;
+}
+
+/* Media queries */
+
+@media (max-width: 800px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .header-container__name {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left-column {
+    background-color: #c0c0c0;
+    width: 100%;
+  }
+
+  .right-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 435px) {
+  .container {
+    min-width: 355px;
+  }
+
+  .header-container__name {
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 30px;
+  }
+}

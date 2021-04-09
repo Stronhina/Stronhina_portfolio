@@ -1,0 +1,35 @@
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  @extend %font-primary;
+  font-size: 1.8rem;
+  line-height: 1;
+  display: flex;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.navigation__link-item {
+  list-style: none;
+  margin-left: 35px;
+}
+
+.navigation__link {
+  color: $color-heading;
+  text-decoration: none;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    text-shadow: $color-button 1px 1px 0, $color-button -1px -1px 0,
+      $color-button -1px 1px 0, $color-button 1px -1px 0;
+  }
+  &_active {
+    text-shadow: $color-button 1px 1px 0, $color-button -1px -1px 0,
+      $color-button -1px 1px 0, $color-button 1px -1px 0;
+    pointer-events: none;
+    cursor: default;
+  }
+}

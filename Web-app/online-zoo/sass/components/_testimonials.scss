@@ -1,0 +1,63 @@
+.testimonials {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.testimonials__title {
+  margin-bottom: 80px;
+}
+
+.testimonials-slider {
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  max-width: 233px;
+  background-color: $color-background-additional;
+  padding: 22px 20px 30px;
+}
+
+.testimonial-card__header {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: $color-heading;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.testimonial__photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+
+  // position: absolute;
+  // top: 20px;
+}
+
+.testimonial__name {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.testimonial__donate {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.testimonial-card__text {
+  text-align: left;
+  margin: 0;
+}
+
+.layout-4-column__testimonials {
+  margin: 0 auto;
+  max-width: 992px;
+  padding: 0;
+  margin-bottom: 65px;
+}

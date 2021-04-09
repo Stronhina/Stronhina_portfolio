@@ -1,0 +1,10 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+@import "./blocks/base.css";
+@import "./blocks/header.css";
+@import "./blocks/survival.css";
+@import "./blocks/latest_articles.css";
+@import "./blocks/footer.css";

@@ -1,0 +1,37 @@
+.pay-and-feed {
+  text-align: center;
+  padding: 100px 0px 97px;
+}
+
+.layout-3-column_pay-and-feed {
+  background-image: url("assets/icons/pay-and-feed-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 48% 55%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.pay-and-feed-step {
+  max-width: 320px;
+  text-align: center;
+  margin-right: 45px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.pay-and-feed-step__discription {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: $color-heading;
+}
+
+.pay-and-feed-step__img {
+  background-image: url("assets/backgrounds/pay-and-feed-card-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+  padding: 20px 45px 25px 50px;
+}

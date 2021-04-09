@@ -1,0 +1,23 @@
+.button {
+  @extend %font-primary;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  background-color: $color-button;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: none;
+  outline: none;
+  padding: 15px 60px;
+  &:hover {
+    background-color: $color-button-hover;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.button_play {
+  display: inline-flex;
+  align-items: center;
+}

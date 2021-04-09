@@ -1,0 +1,13 @@
+.watch-online__wrapper {
+  max-width: 570px;
+  padding: 130px 0px 137px;
+}
+
+.watch-online__title {
+  @extend %font-add;
+  font-size: 7rem;
+  line-height: 1.2;
+  color: $color-heading;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 55px;
+}

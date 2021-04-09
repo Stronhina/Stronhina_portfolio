@@ -1,0 +1,22 @@
+.logo {
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.logo-object {
+  width: 112px;
+  height: 57px;
+  pointer-events: none;
+}
+
+// .logo-svg {
+//   &:hover {
+
+//   }
+// }
+
+// .logo-path {
+//   cursor: pointer;
+// }

@@ -1,0 +1,49 @@
+.error__wrapper {
+  text-align: center;
+  padding: 190px 0px;
+}
+
+.error {
+  position: relative;
+  max-width: 675px;
+  margin: 0 auto;
+}
+
+.error__img-text {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  @extend %font-add;
+  font-weight: 900;
+  font-size: 10rem;
+  line-height: 12.5rem;
+  color: $color-light;
+  margin: 0;
+}
+
+.error__text {
+  position: absolute;
+  bottom: 4%;
+  left: 24%;
+  @extend %font-error;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 7rem;
+  color: $color-error-text;
+  margin: 0;
+}
+
+.error__link {
+  position: absolute;
+  bottom: 0%;
+  left: 34%;
+  @extend %font-error;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: $color-error-link;
+  text-decoration: none;
+  &:hover {
+    color: $color-link;
+  }
+}

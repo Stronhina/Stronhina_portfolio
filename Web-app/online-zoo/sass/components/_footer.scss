@@ -1,0 +1,84 @@
+.footer {
+  position: relative;
+  z-index: 9;
+  padding: 80px 0px 20px;
+  background-color: $color-background-primary;
+}
+
+.footer__donate-btn {
+  padding: 14px 29px 15px;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+.footer-navigation__links-lists {
+  display: flex;
+}
+
+.footer-navigation__links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 121px;
+}
+.footer-navigation__links-item {
+  margin-bottom: 15px;
+}
+
+.footer-navigation__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: $color-heading;
+}
+
+.footer__socials-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer-__social-list-item {
+  margin-right: 10px;
+  transition: all 0.2s ease-in;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.footer__social-link {
+  display: block;
+  width: 41px;
+  height: 40px;
+  &_insta {
+    background-image: url("assets/icons/socials/Insta.svg");
+  }
+  &_fb {
+    background-image: url("assets/icons/socials/Facebook.svg");
+  }
+  &_tw {
+    background-image: url("assets/icons/socials/Twitter.svg");
+  }
+  &_yt {
+    background-image: url("assets/icons/socials/Youtube.svg");
+  }
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bg {
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+  width: 100%;
+}

@@ -1,0 +1,6 @@
+.layout-4-column-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-column-gap: 20px;
+}

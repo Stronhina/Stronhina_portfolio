@@ -1,0 +1,190 @@
+.map {
+  padding: 100px 0px;
+}
+
+.map__background {
+  background-color: $color-background-additional;
+}
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__img {
+  width: 100%;
+}
+
+.map__animal {
+  position: absolute;
+  &_eagle {
+    top: 53%;
+    left: 7%;
+  }
+  &_alligator {
+    top: 54%;
+    left: 26%;
+  }
+  &_gorilla {
+    top: 69%;
+    left: 56%;
+  }
+  &_panda {
+    top: 53%;
+    left: 79%;
+  }
+  &_elephant {
+    top: 84%;
+    left: 47%;
+  }
+  &_penguin {
+    top: 89%;
+    left: 21%;
+  }
+  &_polar-bear {
+    top: 17%;
+    left: 15%;
+  }
+  &_owl {
+    top: 33%;
+    left: 0%;
+  }
+}
+
+.map__animal-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $color-light;
+}
+
+.map__animal-link {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 69%;
+    top: 26%;
+    z-index: 1;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-heading;
+    min-width: 111px;
+    text-align: center;
+    padding: 5px 15px;
+    pointer-events: none;
+  }
+  &_eagle::after {
+    content: "EAGLE";
+    position: absolute;
+    left: -163%;
+    top: 21%;
+  }
+  &_alligator::after {
+    content: "ALLIGATOR";
+  }
+  &_gorilla::after {
+    content: "GORILLA";
+  }
+  &_panda::after {
+    content: "PANDA BEAR";
+  }
+  &_elephant::after {
+    content: "ELEPHANT";
+  }
+  &_penguin::after {
+    content: "PENGUIN";
+  }
+  &_owl::after {
+    content: "ARCTIC SNOWY OWL";
+  }
+  &_polar-bear::after {
+    content: "POLAR BEAR";
+  }
+  &:hover::after {
+    // transition: 1s;
+    content: attr(data-title);
+    // content: "PANDA, China";
+    position: absolute;
+    left: 94%;
+    top: 0%;
+    z-index: 1;
+    background-image: url("assets/icons/tooltype.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-heading;
+    min-width: 111px;
+    text-align: center;
+    padding: 5px 15px;
+    pointer-events: none;
+    // white-space: pre-wrap;
+  }
+  &:hover {
+    .map__animal-img {
+      border: 4px solid $color-button;
+    }
+  }
+}
+
+.map__zoom {
+  position: absolute;
+  right: -31%;
+  bottom: -5%;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+.map__zoom-button {
+  width: 32px;
+  background-color: $color-light;
+  border: none;
+  padding: 20px 10px;
+  @extend %font-primary;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  &_minus {
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+  }
+  &_plus {
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+  }
+}
+
+.map__zoom-button-division {
+  width: 32px;
+  height: 1px;
+  background-color: $color-heading;
+}
+
+// .footer_relative {
+//   position: relative;
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     background: url("/assets/backgrounds/footer-bg.png") no-repeat center center;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     top: -11%;
+//     left: 0;
+//   }
+// }
+
+// .footer__bg {
+//   position: absolute;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+// }
+
+// .footer__wrapper {
+//   z-index: 9;
+// }

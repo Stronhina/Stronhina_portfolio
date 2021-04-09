@@ -1,0 +1,188 @@
+.animal-video {
+  position: relative;
+  padding-bottom: 100px;
+  z-index: 99;
+}
+
+.animal-video__wrapper {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.animal-video__title {
+  margin-bottom: 80px;
+}
+
+.animal-video__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 27px 5px 20px;
+  width: 111px;
+  background-image: url("assets/animal/panel-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 40%;
+  z-index: 9;
+}
+
+.animal-video__panel-icon {
+  margin-bottom: 8px;
+}
+
+.feed-icon__bg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: $color-button;
+  border: 2px solid $color-light;
+  background-image: url("assets/animal/panda-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 51% 63%;
+}
+
+.video__animal-link {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  &:hover::after {
+    // transition: 1s;
+    content: attr(data-title);
+    position: absolute;
+    left: 94%;
+    top: -20%;
+    z-index: 1;
+    background-image: url("assets/icons/tooltype.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-heading;
+    min-width: 111px;
+    text-align: center;
+    padding: 5px 15px;
+    pointer-events: none;
+  }
+  &:hover {
+    .map__animal-img {
+      border: 4px solid $color-button;
+    }
+
+    .feed-icon__bg {
+      border: 4px solid $color-button;
+    }
+  }
+}
+
+.video__animal-link_active {
+  pointer-events: none;
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 94%;
+    top: -20%;
+    z-index: 1;
+    background-image: url("assets/icons/tooltype.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-heading;
+    min-width: 111px;
+    text-align: center;
+    padding: 5px 15px;
+  }
+  .map__animal-img {
+    border: 4px solid $color-button;
+  }
+
+  .feed-icon__bg {
+    border: 4px solid $color-button;
+  }
+}
+
+.animal-video__broadcast {
+  margin-bottom: 30px;
+}
+
+.animal-video__broadcast-full {
+  position: relative;
+  padding: 30px 0 56.25% 0; //16:9 or 75% for 4:3
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.animal-video__frame_full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animal-video__frame_preview {
+  width: 275px;
+  height: 175px;
+}
+
+.general-information {
+  background-color: $color-background-additional;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: $color-heading;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 20px 0px 22px;
+}
+
+.general-information-text {
+  padding: 0px 20px;
+}
+
+.add-information {
+  position: relative;
+  background-color: $color-background-additional;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: $color-heading;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 46px 80px 39px 20px;
+  &:nth-last-of-type(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.add-information__accordion {
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: $color-slider-button;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 37%;
+  right: 4%;
+  transition: all 0.2s ease-in;
+  &:hover {
+    opacity: 0.8;
+  }
+  &_open {
+    background-image: url("assets/animal/close-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.animal-video__information-title {
+  margin: 0 0 7px;
+}
+
+.animal-video__information-text {
+  margin: 0;
+}
