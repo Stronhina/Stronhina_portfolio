@@ -15,6 +15,7 @@
 4. My first step in BEM
 5. PixelPerfect
 6. BEM
+7. Sass
 
 
 #### Description task: ####
